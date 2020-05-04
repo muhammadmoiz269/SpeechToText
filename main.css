@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(1,100vh);
+    grid-template-areas: "page1";
+                         
+}
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1{
+    /* background: pink; */
+    display: grid;
+    grid-template-rows: 15fr 20fr 15fr 15fr 35fr;
+    grid-template-areas: "navbar"
+                          "content"
+                          "text"
+                          "icon"
+                          "sometext";
+                          background: url("./blur.jpeg");
+                          background-size: 100% 100%;
+                   
+}
+.navbar{
+    /* background: lightgreen; */
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    grid-template-areas: "logo services-text";
+}
+.logo{
+    /* background: magenta; */
+    font-size: 5rem;
+    color: gray;
+    display: none;
+
+}
+.services-text{
+    /* background: midnightblue; */
+    font-family: 'Shadows Into Light', cursive;
+    
+
+}
+
+.services-text>ul>li{
+    padding: 4rem;
+    font-size: 3rem;
+    display: inline;
+    color: #ffff;
+    font-family: 'Shadows Into Light', cursive;
+}
+.content{
+/* background: lime; */
+color: #ffff;
+font-size: 5rem;
+font-family: 'Shadows Into Light', cursive;
+}
+.text{
+    /* background: lightgreen; */
+    color: #ffff;
+    font-size: 4rem;
+    font-family: 'Indie Flower', cursive;
+}
+.icon{
+    /* background: lime; */
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    animation: mic 15s ease-in-out infinite;
+    
+
+
+}
+@keyframes mic{
+    0%{
+        color: #2c3e50;
+
+    }
+    25%{
+        
+        color: #ecf0f1;
+    }
+    50%{
+        color: #2c3e50;
+        
+    }
+    75%{
+        
+        color: #ecf0f1;
+
+    }
+    100%{
+        color: #2c3e50;
+
+    }
+
+
+}
+.sometext{
+    /* background: powderblue; */
+    font-size: 2.5rem;
+    color: #ffff;
+    flex-flow: column;
+    overflow-y: scroll;
+    margin-right: 15rem;
+    scrollbar-color: yellow blue;
+   
+  
+    font-family: 'Shadows Into Light', cursive;
+
+
+}
+@media only screen and (max-width: 816px)
+{
+    .services-text>ul>li{
+        padding: 4rem;
+        font-size: 2.5rem;
+        display: inline;
+        color: #ffff;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    .content{
+        /* background: lime; */
+        color: #ffff;
+        font-size: 4rem;
+        font-family: 'Shadows Into Light', cursive;
+        }
+        .text{
+            /* background: lightgreen; */
+            color: #ffff;
+            font-size: 4rem;
+            font-family: 'Indie Flower', cursive;
+        }
+
+}
+@media only screen and (max-width: 730px)
+{
+    .services-text>ul>li{
+        padding: 3rem;
+        font-size: 2.5rem;
+        display: inline;
+        color: #ffff;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    .content{
+        /* background: lime; */
+        color: #ffff;
+        font-size: 3.5rem;
+        font-family: 'Shadows Into Light', cursive;
+        }
+        .text{
+            /* background: lightgreen; */
+            color: #ffff;
+            font-size: 4rem;
+            font-family: 'Indie Flower', cursive;
+        }
+        .page1{
+            /* background: pink; */
+          
+                                  background: url("./dark.jpeg");
+                                  background-size: 100% 120%;
+                           
+        }
+
+}
+@media only screen and (max-width: 620px)
+{
+    .services-text>ul>li{
+        padding: 2.5rem;
+        font-size: 2rem;
+        display: inline;
+        color: #ffff;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    .content{
+        /* background: lime; */
+        color: #ffff;
+        font-size: 3rem;
+        font-family: 'Shadows Into Light', cursive;
+        }
+        .text{
+            /* background: lightgreen; */
+            color: #ffff;
+            font-size: 3.5rem;
+            font-family: 'Indie Flower', cursive;
+        }
+        .page1{
+            /* background: pink; */
+          
+                                  background: url("./dark.jpeg");
+                                  background-size: 100% 100%;
+                           
+        }
+
+}
+@media only screen and (max-width: 520px)
+{
+    .services-text>ul>li{
+        padding: 2rem;
+        font-size: 2rem;
+        display: inline;
+        color: #ffff;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    .content{
+        /* background: lime; */
+        color: #ffff;
+        font-size: 2.5rem;
+        font-family: 'Shadows Into Light', cursive;
+        }
+        .text{
+            /* background: lightgreen; */
+            color: #ffff;
+            font-size: 3rem;
+            font-family: 'Indie Flower', cursive;
+        }
+        .page1{
+            /* background: pink; */
+          
+                                  background: url("./dark.jpeg");
+                                  background-size: 100% 100%;
+                           
+        }
+        .logo{
+            /* background: magenta; */
+            font-size: 3rem;
+            color: #ffff;
+            display: block;
+            margin: 3rem 4rem;
+            
+        
+        }
+        .services-text{
+            /* background: midnightblue; */
+            font-family: 'Shadows Into Light', cursive;
+            display: none;
+        
+        }
+        
+
+}
+
+@media only screen and (max-width: 450px)
+{
+    .services-text>ul>li{
+        padding: 1rem;
+        font-size: 2rem;
+        display: inline;
+        color: #ffff;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    .content{
+        /* background: lime; */
+        color: #ffff;
+        font-size: 2rem;
+        font-family: 'Shadows Into Light', cursive;
+        }
+        .text{
+            /* background: lightgreen; */
+            color: #ffff;
+            font-size: 2.5rem;
+            margin-bottom: 7rem;
+            font-family: 'Indie Flower', cursive;
+        }
+        .icon{
+            /* background: lime; */
+            font-size: 6rem;
+            display: flex;
+            justify-content: center;
+            animation: mic 15s ease-in-out infinite;
+            
+        
+        
+        }
+        .sometext{
+            /* background: powderblue; */
+            font-size: 2rem;
+            color: #ffff;
+            flex-flow: column;
+            overflow-y: scroll;
+            margin-right: 1rem;
+            font-family: 'Shadows Into Light', cursive;
+        
+        
+        }
+        .page1{
+            /* background: pink; */
+          
+                                  background: url("./dark.jpeg");
+                                  background-size: 100% 100%;
+                           
+        }
+
+}
